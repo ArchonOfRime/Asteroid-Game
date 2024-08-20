@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://o8x3ltddbeyt"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_o7hg6"]
+[ext_resource type="Texture2D" uid="uid://u87ed48gs3qj" path="res://assets/double_arrow.png" id="2_abetm"]
+[ext_resource type="Texture2D" uid="uid://dt3cxl5jr2fx1" path="res://assets/little_planet.png" id="3_rghj2"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_o7hg6")
+
+[node name="vertical_arrow" type="Sprite2D" parent="."]
+position = Vector2(500, 500)
+rotation = 3.14159
+texture = ExtResource("2_abetm")
+
+[node name="horizontal_arrow" type="Sprite2D" parent="."]
+position = Vector2(500, 500)
+rotation = 4.71239
+texture = ExtResource("2_abetm")
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(500, 500)
+texture = ExtResource("3_rghj2")
