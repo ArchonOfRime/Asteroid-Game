@@ -21,7 +21,7 @@ func _process(delta):
 		get_tree().change_scene_to_file("res://menu.tscn")
 	d += delta
 	
-	if (timer > 2 and not end_state):
+	if (timer > 1 and not end_state):
 		timer = 0
 		multiplier = 1
 		speed = PI / (2**9)
